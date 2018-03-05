@@ -11,7 +11,6 @@ class Auth extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->database();
         $this->load->library(array('ion_auth', 'form_validation'));
         $this->load->helper(array('url', 'language'));
 
@@ -44,6 +43,8 @@ class Auth extends CI_Controller {
             }
 
             $this->_render_page('auth/index', $this->data);
+            
+            //echo '<pre>';print_r($this->data);echo '</pre>';
         }
     }
 
