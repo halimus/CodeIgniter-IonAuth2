@@ -20,7 +20,6 @@ INSERT INTO `groups` (`id`, `name`, `description`) VALUES
      (2,'members','General User');
 
 
-
 DROP TABLE IF EXISTS `users`;
 
 #
