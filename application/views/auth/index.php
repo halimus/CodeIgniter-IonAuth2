@@ -1,3 +1,4 @@
+<h1>Users List</h1>
 <?php 
    $user = $this->ion_auth->user()->row();
 ?>
@@ -9,7 +10,13 @@
 
 <hr>
 
-<h1><?php echo lang('index_heading'); ?></h1>
+<p>
+   <?php echo anchor('/', 'Home'); ?> | 
+   <?php echo anchor('auth', 'Users List', 'title="Users List"'); ?> | 
+   <?php echo anchor('settings', 'Settings'); ?>
+</p>
+
+<h2><?php echo lang('index_heading'); ?></h2>
 <p><?php echo lang('index_subheading'); ?></p>
 
 <div id="infoMessage"><?php echo $message; ?></div>

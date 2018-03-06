@@ -11,4 +11,8 @@
 
 <hr>
 
-<p><?php echo anchor('auth', 'Users List', 'title="Users List"'); ?></p>
+<p>
+   <?php echo anchor('/', 'Home'); ?> | 
+   <?php echo anchor('auth', 'Users List', 'title="Users List"'); ?> | 
+   <?php echo anchor('settings', 'Settings'); ?>
+</p>
